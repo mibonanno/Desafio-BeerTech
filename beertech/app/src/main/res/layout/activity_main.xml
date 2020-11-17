@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".view.LoginActivity">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="@string/image_content_description_beertech_logo" />
+
+    <EditText
+        android:id="@+id/et_login"
+        android:autofillHints="Nome"
+        android:hint="@string/hint_login"
+        android:inputType="text"
+        style="@style/input_text" />
+
+    <TextView
+        android:id="@+id/tv_loginWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="blue"
+        tools:text="Preencha o campo" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:autofillHints="Senha"
+        android:hint="@string/hint_senha"
+        android:inputType="textPassword"
+        style="@style/input_text"
+        />
+    <TextView
+        android:id="@+id/tv_passwordWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="blue"
+        tools:text="Esse campo não pode ficar vazio." />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="12"
+        android:text="@string/btn_logar" />
+
+</LinearLayout>
